@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Our Angular 5!';
+
+  users = [
+    {name : 'Card1'},
+    {name : 'Card2'},
+    {name : 'Card3'},
+    {name : 'Card4'},   
+  ]
 }

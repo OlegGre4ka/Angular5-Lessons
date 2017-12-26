@@ -1,4 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
   <h1 style="text-align:center">
     Welcome to {{ title }}!
@@ -7,27 +6,9 @@
   <h3>Today,25.12.2017 I begin learning Angular4!!!</h3>
   <h4>But, but, but!!!!Warning!! This is - Angular 5!!!</h4>
   <div class="row row-card">
-    <app-user></app-user>
-    <app-user></app-user>
-    <app-user></app-user>
-    <app-user></app-user>
-
-
-    <!-- <div class="col s3">
-      <div class="card">
-        <div class="card-image">
-          <img src="http://materializecss.com/images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
-            markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-  </div> -->
+    <app-user 
+    *ngFor="let x of users"
+    [user]="x"></app-user>
 
   </div>
 </div>
